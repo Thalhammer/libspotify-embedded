@@ -1,0 +1,5 @@
+.vscode
+docs
+libs
+obj
+login_data.h
