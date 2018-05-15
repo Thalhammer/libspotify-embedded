@@ -11,7 +11,7 @@ and murder everyone you love. Or it might just work as expected.
 As far as I can tell it seems to work mostly fine for me, but expect the unexpected.
 
 #### Logindata
-Before you continue you need to create a header file called "login_data.h" and entry your spotify account into it.
+Before you continue you need to create a header file called "login_data.h" and enter your spotify account into it.
 ```c++
 #pragma once
 #define SP_USER "username"
