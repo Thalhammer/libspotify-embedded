@@ -249,7 +249,7 @@ typedef struct {
 	char version[31];
 	/** Always 1 */
 	uint32_t unknown;
-	/** Always "NONE" */
+	/** Always "NONE", might be group status */
 	char unknown2[16];
 } sp_zeroconfvars_t;
 
@@ -452,12 +452,17 @@ typedef struct {
 	int (*fn10)(void* a, void* b, void* c, void* d);
 	// Sendto
 	int (*fn11)(void* a, void* b, void* c, void* d);
+    // Error
 	int (*fn12)(void* a, void* b, void* c, void* d);
+    // is_readable
 	int (*fn13)(void* a, void* b, void* c, void* d);
+    // is_writable
 	int (*fn14)(void* a, void* b, void* c, void* d);
+    // local_address
 	int (*fn15)(void* a, void* b, void* c, void* d);
+    // remote_address
 	int (*fn16)(void* a, void* b, void* c, void* d);
-	// Select ?
+	// on_pump
 	int (*fn17)(int a, void* data);
 } sp_sockethal_callbacks_t;
 
